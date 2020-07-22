@@ -9,8 +9,8 @@ def find_min_in_nested_arrays(src)
     while inner_array < src[outer_array].count do
       new_array << src[outer_array][inner_array].min
       # binding.pry
+      inner_array += 1
     end
-    inner_array += 1
     # new_array << src[inner_array].min {|a, b| a<=>b}
   end
   outer_array+=1
